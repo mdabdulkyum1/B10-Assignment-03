@@ -9,20 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
     <!-- Tailwind css & DaisyUi here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .manrope {
-            font-family: "Manrope", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: normal;
-            font-style: normal;
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                manrope: ['Manrope', 'sans-serif'],
+              },
+            }
+          }
         }
-    </style>
+      </script>
 </head>
 
-<body class="manrope">
+<body class="font-manrope">
     <h1 class="text-4xl font-extrabold">Rinterio</h1>
 </body>
 
